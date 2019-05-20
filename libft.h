@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 09:08:03 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/05/20 09:50:42 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/05/20 13:07:31 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,6 @@
 #define libft
 
 	void	ft_putchar(char c);
+	void	ft_putstr(char const *s);
 
 #endif
