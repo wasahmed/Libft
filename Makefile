@@ -6,7 +6,7 @@
 #    By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/20 09:59:09 by wasahmed          #+#    #+#              #
-#    Updated: 2019/05/20 11:08:32 by wasahmed         ###   ########.fr        #
+#    Updated: 2019/05/20 13:13:25 by wasahmed         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 FLAGS = -Wall -Werror -Wextra
 
-SRC = $(shell ls | grep -E ".c")
+SRC = $(shell ls | grep -E "ft_.+\.c")
 
 OBJ_NAME = $(SRC:%.c=%.o) 
 
