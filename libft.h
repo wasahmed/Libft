@@ -6,16 +6,14 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 09:08:03 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/05/20 13:07:31 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/05/21 07:56:29 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-
-#ifndef libft
-#define libft
+#ifndef LIBFT_H
+# define LIBFT_H
+# include <unistd.h>
 
 	void	ft_putchar(char c);
 	void	ft_putstr(char const *s);
-
 #endif
