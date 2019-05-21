@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 08:10:17 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/05/21 09:13:28 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/05/21 10:29:29 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	ft_putnbr(int n)
 	}
 	if (n > 9)
 	{
-		ft_putnbr(n/10);
-		ft_putnbr(n%10);
+		ft_putnbr(n / 10);
+		ft_putnbr(n % 10);
 	}
 	if (n < 10)
 		ft_putchar(n + 48);
