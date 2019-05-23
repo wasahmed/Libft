@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 09:08:03 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/05/23 08:20:42 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/05/23 09:19:27 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,6 @@ size_t	ft_strlen(const char *s);
 char	*ft_strcpy(char *dest, const char *src);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+char	*ft_strncpy(char *dst, const char *src, size_t len);
 
 #endif
