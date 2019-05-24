@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 09:08:03 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/05/23 13:37:21 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/05/24 07:17:56 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,6 @@ int		ft_tolower(int c);
 char	*ft_strncpy(char *dst, const char *src, size_t len);
 int		ft_isascii(int c);
 int		ft_isdigit(int c);
+int		ft_isalpha(int c);
 
 #endif
