@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/20 09:08:03 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/05/24 08:15:04 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/05/27 08:22:46 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ int		ft_isdigit(int c);
 int		ft_isalpha(int c);
 int		ft_isprint(int c);
 int		ft_isalnum(int c);
+int		ft_atoi(const char *str);
 
 #endif
