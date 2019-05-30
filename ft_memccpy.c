@@ -1,33 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/28 09:36:15 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/05/30 12:24:40 by wasahmed         ###   ########.fr       */
+/*   Created: 2019/05/30 12:27:15 by wasahmed          #+#    #+#             */
+/*   Updated: 2019/05/30 14:08:45 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-void	*ft_memcpy(void *dst, const void *str, size_t n)
+void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
 	size_t	i;
-	char	*dest;
-	const char	*src;
-	
-	if (str == dst)
-		return ((char *)str);
-	dest = (char *)dst;
-	src = (char *)str;
+	const char *source;
+	char *destination;
+
 	i = 0;
+	source = (const char *)src;
+	destination = (char *)dst;
 	while (i < n)
 	{
-		dest[i] = src[i];
+		if (source[i] == (unsigned char)c)
+		{
+			while (++i < n)
+				destination[i] = source[i];
+		}
 		i++;
 	}
-	return (dst);
+	return (destination);
 }
