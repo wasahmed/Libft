@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/30 12:27:15 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/05/31 09:19:09 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/06/07 10:08:35 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 {
-	size_t	i;
-	const char *source;
-	char *destination;
+	size_t		i;
+	const char	*source;
+	char		*destination;
 
 	i = 0;
 	source = (const char *)src;
