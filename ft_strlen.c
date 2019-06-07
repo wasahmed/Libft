@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/21 10:17:07 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/05/22 12:38:43 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/06/07 09:57:20 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,4 +21,3 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
-//return type size_t
