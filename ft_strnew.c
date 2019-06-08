@@ -1,22 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memdel.c                                        :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/06/08 10:53:57 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/06/08 13:00:11 by wasahmed         ###   ########.fr       */
+/*   Created: 2019/06/08 11:28:10 by wasahmed          #+#    #+#             */
+/*   Updated: 2019/06/08 12:59:29 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_memdel(void **ap)
+char	*ft_strnew(size_t size)
 {
-	if (ap)
-	{
-	free(*ap);
-	*ap = NULL;
-	}
+	char	*str;
+
+	str = malloc(size + 1);
+	if (str == NULL)
+		return (NULL);
+	ft_bzero(str, size + 1);
+	return (str);
 }
