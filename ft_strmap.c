@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/08 14:13:46 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/06/08 14:29:30 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/06/10 09:58:44 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 		return (NULL);
 	while (s[i] != '\0')
 	{
-		str[i] = f(s[i]);
+		str[i] = (*f)(s[i]);
 		i++;
 	}
 	str[i] = '\0';
