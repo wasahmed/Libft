@@ -1,25 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 10:38:42 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/06/12 11:21:18 by wasahmed         ###   ########.fr       */
+/*   Created: 2019/06/12 15:24:30 by wasahmed          #+#    #+#             */
+/*   Updated: 2019/06/12 15:24:49 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_strncmp(const char *s1, const char *s2, size_t n)
+static int		count_digits(int n)
 {
-	size_t	i;
+	size_t	count;
 
-	i = 0;
-	if (n == 0)
-		return (0);
-	while (s1[i] == s2[i] && s1[i] != '\0' && s2[i] != '\0' && i < n - 1)
-		i++;
-	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
+	count = 1;
+	while (n /= 10)
+		count++;
+	return (count);
+}
+
+char			*ft_itoa(int n)
+{
+	size_t			len;
+	char			*str;
+	unsigned int	nbr;
+
+	len = count_digits(n);
+	nbr = n;
+	if (n < 0)
+	{
+		nbr = -n;
+		len++;
+	}
+	if (!(str = ft_strnew(len)))
+		return (NULL);
+	str[--len] = nbr % 10 + '0';
+	while (nbr /= 10)
+		str[--len] = nbr % 10 + '0';
+	if (n < 0)
+		str[0] = '-';
+	return (str);
 }
