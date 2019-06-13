@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 09:36:15 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/06/07 10:18:04 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/06/13 07:41:12 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ void	*ft_memcpy(void *dst, const void *str, size_t n)
 
 	if (str == dst)
 		return ((char *)str);
+	if (dst == NULL || str == NULL)
+		return (NULL);
 	dest = (char *)dst;
 	src = (char *)str;
 	i = 0;
