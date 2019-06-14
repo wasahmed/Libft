@@ -6,7 +6,7 @@
 /*   By: wasahmed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/28 08:57:28 by wasahmed          #+#    #+#             */
-/*   Updated: 2019/06/12 16:35:40 by wasahmed         ###   ########.fr       */
+/*   Updated: 2019/06/14 08:54:00 by wasahmed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	if (s == NULL)
-		return ;
 	if (n)
 		ft_memset(s, 0, n);
 }
